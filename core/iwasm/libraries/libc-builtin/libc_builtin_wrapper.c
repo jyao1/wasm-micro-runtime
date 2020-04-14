@@ -214,7 +214,15 @@ _vprintf_wa(out_func_t out, void *ctx, const char *fmt, _va_list ap,
                     goto still_might_format;
                 }
                 /* Fall through */
-            case '1' ... '9':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
                 if (min_width < 0) {
                     min_width = *fmt - '0';
                 } else {

@@ -103,7 +103,7 @@ enum {
 #endif
 
 /* WASM Interpreter labels-as-values feature */
-#define WASM_ENABLE_LABELS_AS_VALUES 1
+#define WASM_ENABLE_LABELS_AS_VALUES 0
 
 #if WASM_ENABLE_FAST_INTERP != 0
 #define WASM_ENABLE_ABS_LABEL_ADDR 1
